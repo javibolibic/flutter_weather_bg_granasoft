@@ -22,7 +22,9 @@ class _WeatherCloudBgState extends State<WeatherCloudBg> {
     var image2 = await ImageUtils.getImage('images/sun.webp');
     _images.add(image1);
     _images.add(image2);
-    setState(() {});
+    if(mounted) {
+      setState(() {});
+    }
   }
 
   @override
